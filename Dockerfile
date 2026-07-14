@@ -8,4 +8,5 @@ ENV EXECUTIONS_DATA_MAX_AGE=168
 
 EXPOSE 5678
 
-CMD ["n8n", "start"]
+# Usar o comando correto do container
+CMD ["n8n"]
