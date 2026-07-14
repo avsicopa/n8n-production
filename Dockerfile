@@ -1,0 +1,13 @@
+FROM n8nio/n8n:latest
+
+ENV DB_TYPE=sqlite
+ENV N8N_PROTOCOL=https
+ENV N8N_PORT=5678
+ENV EXECUTIONS_DATA_PRUNE=true
+ENV EXECUTIONS_DATA_MAX_AGE=168
+
+VOLUME ["/home/node/.n8n"]
+
+EXPOSE 5678
+
+CMD ["n8n", "start"]
