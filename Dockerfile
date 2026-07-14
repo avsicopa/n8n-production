@@ -8,5 +8,6 @@ ENV EXECUTIONS_DATA_MAX_AGE=168
 
 EXPOSE 5678
 
-# Usar o comando correto do container
-CMD ["n8n"]
+# Usar npx para executar n8n
+ENTRYPOINT []
+CMD ["npx", "n8n", "start"]
